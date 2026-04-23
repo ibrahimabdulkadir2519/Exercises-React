@@ -5,7 +5,6 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // ✅ logout outside
   const handleLogout = () => {
     setIsLoggedIn(false);
     setUsername("");
@@ -20,7 +19,7 @@ const LoginForm = () => {
     }
   };
 
-  // ✅ conditional rendering
+
   if (isLoggedIn) {
     return (
       <div>
