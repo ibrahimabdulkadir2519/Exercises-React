@@ -1,0 +1,84 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f9fafb;
+
+  padding: 16px 18px;
+
+  border-radius: 7px;
+
+  margin-bottom: 10px;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.item:hover {
+  background: #f3f4f6;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+
+  accent-color: #9333ea;
+}
+
+.text {
+  font-size: 17px;
+
+  color: #374151;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.completed {
+  text-decoration: line-through;
+
+  opacity: 0.5;
+}
+
+.button {
+  border: none;
+
+  background: transparent;
+
+  color: #dc2626;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  opacity: 0;
+
+  transition: 0.3s;
+}
+
+.item:hover .button {
+  opacity: 1;
+}
+
+.button:hover {
+  color: #991b1b;
+
+  transform: scale(1.1);
+}
